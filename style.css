@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+div.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+div.menu {
+  background-color: #e4b36e6b;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  cursor: pointer;
+}
+
+a:visited {
+  color: black;
+}
+
+div.content-container {
+  height: calc(100% - 55px);
+  width: 100%;
+  display: flex;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 60px;
+}
+
+.item {
+  width: 50%;
+  height: 100%;
+}
+
+.text {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+}
+
+.image {
+  background-image: url("./lampa1.jpg");
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.image:hover {
+  opacity: 0.6;
+  border-radius: 60px;
+}
+
+.standart {
+  font-size: 65px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Square Peg", cursive;
+}
+
+.maintext {
+  font-size: 15px;
+  text-align: justify;
+
+  color: darkgreen;
+}
+
+.buttonindex {
+  border: none;
+  height: 40px;
+  width: 120px;
+  color: rgb(0, 0, 0);
+  font-family: "Square Peg", cursive;
+  font-size: 30px;
+  border-radius: 12px;
+  background-color: #e4b36e6b;
+  opacity: 0.6;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.buttonindex:hover {
+  background-color: rgb(1, 42, 1);
+  color: white;
+}
+
+.home:hover {
+  transform: scale(1.5);
+  transition: all 0.3s;
+  text-decoration: underline;
+}
+.contact:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.products:active {
+  color: brown;
+  text-decoration: underline;
+}
+
+.gallery:hover {
+  text-decoration: none;
+}
+
+.mapsimage {
+  background-image: url("./maps.jpg");
+  background-size: cover;
+  height: 30%;
+  width: 100%;
+}
+
+.maincontainer {
+  height: calc(100% - 55px);
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.text2 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.null {
+  height: calc(100% - 55px);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.quadrat {
+  height: calc(50% - 25px);
+  width: calc(50% - 25px);
+  display: flex;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.quadrat:hover {
+  opacity: 0.6;
+  transition: all 0.3s;
+  border-radius: 20px;
+  filter: blur(3px);
+}
+.eins {
+  background-image: url("./eins.jpg");
+  margin-right: 50px;
+}
+.zwei {
+  background-image: url("./zwei.jpg");
+  margin-bottom: 50px;
+}
+.drei {
+  background-image: url("./drei.jpg");
+  margin-right: 50px;
+}
+.vier {
+  background-image: url("./vier.jpg");
+}
+
+.buttoncontact {
+  border: none;
+  height: 35px;
+  width: 100%;
+  color: rgb(0, 0, 0);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  border-radius: 12px;
+  background-color: #e4b36e6b;
+  opacity: 0.6;
+
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttoncontact:hover {
+  background-color: rgb(1, 42, 1);
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  height: 75px;
+  color: darkgreen;
+  border-radius: 12px;
+  background-color: rgb(219, 215, 215);
+  border-color: rgb(219, 215, 215);
+  margin: 0 auto;
+  resize: none;
+}
+input {
+  width: 100%;
+  height: 35px;
+  color: darkgreen;
+  border-radius: 12px;
+  background-color: rgb(219, 215, 215);
+  border-style: none;
+  margin: 0 auto;
+}
+
+input,
+label {
+  display: block;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-width: 5%;
+  border-color: rgb(196, 191, 191);
+  border-style: solid;
+  width: 50%;
+  border-radius: 12px;
+  padding: 10px;
+  margin: 0 auto;
+}
+.test {
+  background-image: url("./eins.jpg");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  margin: auto;
+  display: flex;
+  background-position: center;
+}
+.glas {
+  width: 35%;
+  height: 85%;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  margin: auto;
+}
+/* .glas:hover {
+  opacity: 0.8;
+} */
+
+.form-patryk {
+  padding: 5% 10%;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-patryk input {
+  background-color: rgba(255, 255, 255, 0.818);
+  border-radius: 6px;
+  height: 45px;
+  color: rgb(42, 42, 42);
+}
+
+.avatar-container {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
+.avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: rgb(119 45 49);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.btn:hover {
+  background-color: rgb(102, 36, 39);
+}
